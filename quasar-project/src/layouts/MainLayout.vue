@@ -1,116 +1,88 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-btn
+  <q-layout view="lHh Lpr fff">
+    <q-header>
+      <q-toolbar class="primary">
+        <q-toolbar-title>B.L.O.D.34</q-toolbar-title>
+        
+        <q-btn flat @click="$router.push('/')">Accueil</q-btn>
+        <q-btn flat @click="$router.push('/Sources')">Sources</q-btn>
+        <q-btn flat @click="$router.push('/Presentez-nous')">Présentez-nous !</q-btn>
+        
+        <!-- Bouton Thème avec menu déroulant -->
+        <q-btn-dropdown
           flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
+          label="Thème"
+          v-model="selectedTheme"
+          :options="themeOptions"
+          emit-value
+          map-options
+          @input="changeTheme"
         />
-
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
-      <q-list>
-        <q-item-label
-          header
-        >
-          Essential Links
-        </q-item-label>
-
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
-
     <q-page-container>
-      <router-view />
+      <home-front></home-front>
     </q-page-container>
+    
+    <q-footer>
+     <q-toolbar>
+      <q-btn flat @click="$router.push('/')">Accueil</q-btn>
+        <q-btn flat @click="$router.push('/Sources')">Sources</q-btn>
+        <q-btn flat @click="$router.push('/Presentez-nous')">Présentez-nous !</q-btn>
+        <q-toolbar-title>
+        </q-toolbar-title>
+        <div>
+        <h3>Membres</h3>
+        <ul>
+          <li>Archi</li>
+          <li>Cerzen</li>
+          <li>Colibry</li>
+          <li>Cyrers</li>
+          <li>fynewix</li>
+          <li>hypo</li>
+          <li>Kazeno Uta</li>
+          <li>Zeph</li>
+          
+        </ul>
+      </div>
+     </q-toolbar>
+    </q-footer>
+
+    
+    
   </q-layout>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
+import HomeFront from "pages/Home.vue";
 
-const linksList = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-];
 
-export default defineComponent({
+export default {
   name: 'MainLayout',
-
   components: {
-    EssentialLink
+    HomeFront,
   },
-
-  setup () {
-    const leftDrawerOpen = ref(false)
-
+  data() {
     return {
-      essentialLinks: linksList,
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-});
+     
+      selectedTheme: ref(),
+      themeOptions: [
+        { label: 'Par défaut', value: 'default' },
+        { label: 'Sombre', value: 'dark' },
+        // Ajoutez d'autres options de thème selon vos besoins
+      ],
+    };
+  },
+  methods: {
+    changeTheme(theme:string) {
+      // Utiliser Quasar's Theme API pour changer le thème
+      
+      // Recharger la page
+      this.$router.go(0);
+    },
+  },
+};
 </script>
