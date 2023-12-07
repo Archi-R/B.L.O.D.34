@@ -2,17 +2,14 @@
 
     <q-page class="flex flex-center">
 
-      <!-- Intégration de la page html -->
-      <div v-html="htmlContent"></div>
     </q-page>
 
 </template>
 
 
 <script lang="ts">
-import htmlContent from 'src/';
 import { defineComponent } from 'vue';
 export default defineComponent({
-  name: 'LobsterFront',
+  name: 'PresenteznousFront',
 });
 </script>

@@ -4,8 +4,7 @@
         <q-parallax :height="2000" :speed="1">
       
             <template v-slot:media>
-                <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-                <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
+                <img :src="require('@/public/icons/forest.jpg')" alt="Forest" />
             </template>
 
             <h1 class="text-white">La Beuteu</h1>
@@ -97,16 +96,18 @@ export default defineComponent({
 });
 </script>
 
-<!-- 
 <style>
-  .q-parallax__content {
-    background-color: white;
-    max-width: 80%;
-    padding: 0 20px;
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-  }
+  .white-box {
+  background-color: black;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pres-txt {
+  color: white;
+}
 
 </style>
-
--->
