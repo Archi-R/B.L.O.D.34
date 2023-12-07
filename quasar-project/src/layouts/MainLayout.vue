@@ -39,9 +39,8 @@
           <li>Cerzen</li>
           <li>Colibry</li>
           <li>Cyrers</li>
-          <li>DryloXx</li>
-          <li>Fynewix</li>
-          <li>Hypo</li>
+          <li>fynewix</li>
+          <li>hypo</li>
           <li>Kazeno Uta</li>
           <li>Zeph</li>
           
@@ -58,7 +57,7 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
-import HomeFront from 'pages/Home.vue';
+import HomeFront from "pages/Home.vue";
 
 
 export default {

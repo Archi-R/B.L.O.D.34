@@ -19,25 +19,7 @@ const routes: RouteRecordRaw[] = [
     path:'/Lobster',
     component:()=>import("layouts/MainLayout.vue"),
     children: [{path: '', component: () => import('pages/Lobster.vue')}]
-  },
-
-  {
-    path:'/Presentez-nous',
-    component:()=>import("layouts/MainLayout.vue"),
-    children: [{path: '', component: () => import('pages/Presentez-nous.vue')}]
-  },
-
-  {
-    path:'/Sources',
-    component:()=>import("layouts/MainLayout.vue"),
-    children: [{path: '', component: () => import('pages/Sources.vue')}]
-  },
-
-  // Redirection vers la page erreur lorsque'on ne trouve pas la page
-  {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue'),
-  },
+  }
 ];
 
 export default routes;
