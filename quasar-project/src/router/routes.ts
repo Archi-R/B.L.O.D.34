@@ -6,19 +6,19 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component : () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Home.vue')}]
+    children: [
+      { path: '', component: () => import('pages/Home.vue')},
+      { path: 'questions', component: () => import('pages/QuestionsPage.vue') },
+      { path: 'Ecureuil', component: () => import('pages/Ecureuil.vue')},
+      { path: 'Lobster', component: () => import('pages/Lobster.vue')},
+      { path: 'Questions', component: () => import('pages/Questions.vue')},
+    ]
   },
 
   {
-    path:'/Ecureuil',
-    component:()=>import("layouts/MainLayout.vue"),
-    children: [{path: '', component: () => import('pages/Ecureuil.vue')}]
-  },
-
-  {
-    path:'/Lobster',
-    component:()=>import("layouts/MainLayout.vue"),
-    children: [{path: '', component: () => import('pages/Lobster.vue')}]
+    path:'/api/questions/:id',// RECUP ID DU COMPONENT
+    component:()=>import("layouts/MainLayout.vue"),//????
+    children: [{path: '', component: () => import('pages/Question.vue')}]
   }
 ];
 
