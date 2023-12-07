@@ -4,11 +4,10 @@
         <q-parallax :height="2000" :speed="1">
       
             <template v-slot:media>
-                <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-                <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
+                <img src="/public/icons/TreeBackground.png" style="width: 100%; height: 100%; object-fit: cover; display: initial;"/>
             </template>
 
-            <h1 class="text-white">La Beuteu</h1>
+            <h1 class="text-white">La Beuteu n'est plus</h1>
 
     
         </q-parallax>
