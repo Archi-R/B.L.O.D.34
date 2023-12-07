@@ -3,11 +3,11 @@
     <q-header>
       <q-toolbar class="primary">
         <q-toolbar-title>B.L.O.D.34</q-toolbar-title>
-        
+
         <q-btn flat @click="$router.push('/')">Accueil</q-btn>
         <q-btn flat @click="$router.push('/Sources')">Sources</q-btn>
         <q-btn flat @click="$router.push('/Presentez-nous')">Présentez-nous !</q-btn>
-        
+
         <!-- Bouton Thème avec menu déroulant -->
         <q-btn-dropdown
           flat
@@ -22,11 +22,9 @@
     </q-header>
 
     <q-page-container>
-
-      <router-view :key='$route.fullPath'></router-view>
-      <QcmCard/>
+      <router-view></router-view>
     </q-page-container>
-    
+
     <q-footer>
      <q-toolbar>
       <q-btn flat @click="$router.push('/')">Accueil</q-btn>
@@ -46,14 +44,14 @@
           <li>hypo</li>
           <li>Kazeno Uta</li>
           <li>Zeph</li>
-          
+
         </ul>
       </div>
      </q-toolbar>
     </q-footer>
 
-    
-    
+
+
   </q-layout>
 </template>
 
@@ -67,9 +65,12 @@ export default {
     QcmCard,
   },
   name: 'MainLayout',
+  components: {
+    //HomeFront,
+  },
   data() {
     return {
-     
+
       selectedTheme: ref(),
       themeOptions: [
         { label: 'Par défaut', value: 'default' },
@@ -81,9 +82,9 @@ export default {
   methods: {
     changeTheme(theme:string) {
       // Utiliser Quasar's Theme API pour changer le thème
-      
+
       // Recharger la page
-      this.$router.go(0);
+      //this.$router.go(0);
     },
   },
 };
