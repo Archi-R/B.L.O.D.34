@@ -22,7 +22,9 @@
     </q-header>
 
     <q-page-container>
-      <home-front></home-front>
+
+      <router-view :key='$route.fullPath'></router-view>
+      <QcmCard/>
     </q-page-container>
     
     <q-footer>
@@ -39,6 +41,7 @@
           <li>Cerzen</li>
           <li>Colibry</li>
           <li>Cyrers</li>
+          <li>DryloXx</li>
           <li>fynewix</li>
           <li>hypo</li>
           <li>Kazeno Uta</li>
@@ -55,16 +58,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
-import EssentialLink from 'components/EssentialLink.vue';
-import HomeFront from "pages/Home.vue";
+import {ref } from 'vue';
+import QcmCard from '../components/QcmCard.vue'
 
 
 export default {
-  name: 'MainLayout',
-  components: {
-    HomeFront,
+  components:{
+    QcmCard,
   },
+  name: 'MainLayout',
   data() {
     return {
      

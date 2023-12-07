@@ -4,8 +4,6 @@
         <q-parallax :height="2000" :speed="1">
       
             <template v-slot:media>
-                <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-                <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
             </template>
 
             <h1 class="text-white">La Beuteu</h1>
@@ -16,8 +14,6 @@
         
         <div class="presentation">
             <h2>Présentation</h2>
-
-            <div class="white-box">
                 <div class="pres-txt">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -32,14 +28,14 @@
                         Neque sodales ut etiam sit amet nisl purus in mollis. 
                         Suspendisse sed nisi lacus sed viverra tellus in hac habitasse.
                     </p>
-                </div>
             </div>
         </div>
         
         <div class="character-details">
-            <h2 class="text-white">Personnages</h2>
+            <h2>Personnages</h2>
             
-            <div class="squirrel">
+            <div class="characters-container">
+                <div class="squirrel-character-box">
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -54,8 +50,9 @@
                 Suspendisse sed nisi lacus sed viverra tellus in hac habitasse.
                 </p>
             </div>
+
             
-            <div class="lobster">
+            <div class="lobster-character-box">
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -70,6 +67,7 @@
                 Suspendisse sed nisi lacus sed viverra tellus in hac habitasse.
                 </p>
             </div>
+            </div> 
         </div>
 
     <div class="characters-image">
@@ -97,16 +95,53 @@ export default defineComponent({
 });
 </script>
 
-<!-- 
 <style>
-  .q-parallax__content {
-    background-color: white;
+
+/* Présentation */
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     max-width: 80%;
-    padding: 0 20px;
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0,0,0,.5);
-  }
+    border-radius: 1rem;
+}
+
+.presentation h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.presentation .pres-txt p{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    /* justify the text */
+    text-align: justify;
+}
+
+/* Personnages */
+
+.character-details {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    max-width: 80%;
+    border-radius: 1rem;
+}
+
+.character-details h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* characters- */
 
 </style>
-
--->
