@@ -42,7 +42,7 @@
           <li>DryloXx</li>
           <li>fynewix</li>
           <li>hypo</li>
-          <li>Kazeno Uta</li>
+          <li>Kaze no Uta</li>
           <li>Zeph</li>
 
         </ul>
@@ -64,6 +64,7 @@ export default {
   components:{
   },
   name: 'MainLayout',
+
   data() {
     return {
 

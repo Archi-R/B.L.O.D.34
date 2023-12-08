@@ -10,17 +10,33 @@ const routes: RouteRecordRaw[] = [
       { path: '/', component: () => import('pages/Home.vue')},
       { path: 'questions', component: () => import('pages/QuestionsPage.vue') },
       { path: 'Ecureuil', component: () => import('pages/Ecureuil.vue')},
-      { path: 'Lobster', component: () => import('pages/Lobster.vue')},
+      { path: 'Lobster', component: () => import('pages/lobster.vue')},
       { path: 'Questions', component: () => import('pages/Questions.vue')},
-      { path: 'Presentez-nous', component: () => import('pages/Presentez-nous.vue')}
+      { path: 'Presentez-nous', component: () => import('pages/Presentez-nous.vue')},
+      { path: 'HistoireLobster', component: () => import('pages/HistoireLobster.vue')},
     ]
   },
-
-  {
-    path:'/api/questions/:id',// RECUP ID DU COMPONENT
-    component:()=>import("layouts/MainLayout.vue"),//????
-    children: [{path: '', component: () => import('pages/Question.vue')}]
-  }
+    {
+      path: '/Histoire',
+      component : () => import('layouts/MainLayout.vue'),
+      children: [
+        { path: '', component: () => import('pages/HistoireLobster.vue')},
+        { path : 'Introduction', component: () => import('components/Histoire/Introduction.vue')},
+        { path : 'Gulfstream', component: () => import('components/Histoire/CheminGulfstream.vue')},
+        { path : 'Acidification', component: () => import('components/Histoire/CheminAcidification.vue')},
+        { path : 'Dechet', component: () => import('components/Histoire/CheminDechet.vue')},
+        { path : 'Eolienne', component: () => import('components/Histoire/CheminEolienne.vue')},
+        { path : 'Petrole', component: () => import('components/Histoire/CheminDeversementPetrole.vue')},
+        { path : 'Epave', component: () => import('components/Histoire/CheminEpave.vue')},
+        { path : 'Perturbations', component: () => import('components/Histoire/CheminPerturbation.vue')},
+        { path : 'PriseMesure', component: () => import('components/Histoire/CheminPriseMesure.vue')},
+      ] 
+    },
+      {
+      path:'/api/questions/:id',// RECUP ID DU COMPONENT
+      component:()=>import("layouts/MainLayout.vue"),//????
+      children: [{path: '', component: () => import('pages/Question.vue')}]
+    }
 ];
 
 export default routes;
