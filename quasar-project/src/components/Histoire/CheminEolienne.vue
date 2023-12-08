@@ -1,12 +1,11 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Eolienne</h1>
-        <p> Ainsi lorsque celui-ci se dirigeat vers les profondeurs il découvrit le pilonne d'une éolienne.
-            Intrigué il observa pendant un temps le mouvement des pales, celle-ci lui était étrangère néamoins sont mouvement était intéressant.
-            Il s'interessa alors aux divers habitants qui se logaient le long des accoches de l'eolienne.
-            Un éperlan dans un banc : "Nous sommes perdus, avec cette dalle de béton et sans notre maison nous ne savons plus où nous cacher ! En plus, ces pales nous font perdre tous nos repères."
-            [Parler du projet éolien au large de groix]
-            Une solution : une base trouée simulant un récif coralien
+        <p> Ainsi lorsque celui-ci se dirigeat vers les profondeurs il découvrit le pilonne d'une éolienne.<br>
+            Intrigué il observa pendant un temps le mouvement des pales, celle-ci lui était étrangère néamoins sont mouvement était intéressant.<br>
+            Il s'interessa alors aux divers habitants qui se logeaient le long des accoches de l'eolienne.<br>
+            Un éperlan dans un banc : "Nous sommes perdus, avec cette dalle de béton et sans notre maison nous ne savons plus où nous cacher ! En plus, ces pales nous font perdre tous nos repères."<br>
+            Une solution novatrice consiste en une base trouée simulant un récif coralien, offrant un habitat propice à la vie marine.<br>
         </p>
     
         

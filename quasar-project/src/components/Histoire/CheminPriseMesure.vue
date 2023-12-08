@@ -1,10 +1,10 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Prise Mesure</h1>
-        <p>C'est alors que notre cher homard croise un voilier qu'il connait déjà bien : c'est le Tara.
-            Il sait que ce sont des humains qui font des recherches scientifiques pour défendre l'environnement.
-            Quelques jours plus tard, Azuré fait la rencontre de scientifiques marins travaillant à installer des capteurs près du récif de corail, où il se trouve, pour surveiller les changements et prendre des mesures visant à sauvegarder l'écosystème.
-            Azuré devient un messager, transmettant ces informations cruciales aux autres habitants des océans.
+        <p>C'est alors que notre cher homard croise un voilier qu'il connait déjà bien : c'est le Tara.<br>
+            Il sait que ce sont des humains qui font des recherches scientifiques pour défendre l'environnement.<br>
+            Quelques jours plus tard, Azuré fait la rencontre de scientifiques marins travaillant à installer des capteurs près du récif de corail où il se trouve, pour surveiller les changements et prendre des mesures visant à sauvegarder l'écosystème.<br>
+            Azuré devient un messager, transmettant ces informations cruciales aux autres habitants des océans.<br>
         </p>
     
         <router-link to="/Histoire/Acidification">
