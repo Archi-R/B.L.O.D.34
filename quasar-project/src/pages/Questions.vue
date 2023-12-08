@@ -2,31 +2,34 @@
   <q-page class="flex flex-center">
     <div>
       <!-- Carte pour la question -->
-      <div class="testCard">
-        <div class="question">Lorem Ipsum hoooot keuval</div>
+      <div class="testCard" v-if="questions.length > 0" id="carte">
+        <div class="question">{{ questions[currentQuestionIndex].question }}</div>
 
         <div class="answers">
-          <input type="radio" class="answer1"> <label for="answer1">Lorem</label> <img src="../../public/icons/traverser.png" class="correctness"><br>
-          <input type="radio" class="answer2"> <label for="answer2">Ipsum</label> <img src="../../public/icons/traverser.png" class="correctness"><br>
-          <input type="radio" class="answer3"> <label for="answer3">hoooot</label> <img src="../../public/icons/verifier.png" class="correctness"><br>
-          <input type="radio" class="answer4"> <label for="answer4">keuval</label> <img src="../../public/icons/traverser.png" class="correctness"><br>
+          <div v-for="(answer, index) in questions[currentQuestionIndex].choices" :key="index">
+            <input type="radio" :class="'answer' + index" :name="currentQuestionIndex" :id="'answer' + index">
+            <label :for="'answer' + index">{{ answer }}</label>
+            <!-- Ici, vous pouvez ajouter la logique pour afficher l'icône de correction -->
+          </div>
         </div>
 
-        <div class="button-next"><img class="img-next" src="../../public/icons/suivant.png"></div>
+        <div class="button-next" @click="loadNextQuestion">
+          <img class="img-next" src="../../public/icons/suivant.png">
+        </div>
       </div>
 
       <!-- Div pour l'image -->
-      <div class="q-mb-md">
+      <div class="q-mb-md" id="imageEK">
         <!-- Ici, vous pouvez afficher une image liée à la question -->
       </div>
 
       <!-- Div pour les informations -->
-      <div class="q-mb-md">
+      <div class="q-mb-md" id="infos">
         <!-- Ici, vous pouvez afficher des informations supplémentaires ou des feedbacks -->
       </div>
 
       <!-- Div pour le bouton Suivant -->
-      <div>
+      <div class="q-mb-md" id="btn_suiv">
         <!--<q-btn label="Suivant" @click="loadNextQuestion" />-->
 
 
@@ -51,9 +54,17 @@ export default defineComponent({
 
   methods: {
     loadNextQuestion() {
-      // Incrémenter l'index de la question actuelle
-      // Charger la question suivante
-      // Gérer la fin du quiz si toutes les questions ont été posées
+      if (this.currentQuestionIndex < this.questions.length - 1) {
+        this.currentQuestionIndex++;
+      } else {
+        // Gérer la fin du quiz ici
+        alert('Fin du quiz');
+      }
+    },
+
+    loadexplication() {
+      // logique qui affiche le texte d'explication
+      // et le bouton
     },
 
     async fetchQuestions() {
