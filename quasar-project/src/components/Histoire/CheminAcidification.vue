@@ -1,9 +1,9 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Acidification</h1>
-        <p>En explorant des eaux plus profondes, Azuré ressent les effets de l'acidification des océans.
-            Il observe la détérioration des coquilles et carapaces, alertant sur les conséquences de cette menace invisible.
-            Bernard, un ermite seul sur son rocher : "Je ne me sens plus en sécurité, ma coquille est toute trouée"
+        <p>En explorant des eaux plus profondes, Azuré ressent les effets de l'acidification des océans.<br>
+            Il observe la détérioration des coquilles et carapaces, alertant sur les conséquences de cette menace invisible.<br>
+            Bernard, un ermite seul sur son rocher : "Je ne me sens plus en sécurité, ma coquille est toute trouée"<br>
         </p>
     
         <router-link to="/Histoire/Gulfstream">
