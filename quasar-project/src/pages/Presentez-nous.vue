@@ -23,47 +23,47 @@
               <div class="grid-container">
                 <div class="grid-item">
                   <h3>Cerzen</h3>
-                  <img src="../../public/icons/pp/alan.png" alt="Image 1">
+                  <img class="picture" src="../../public/icons/pp/alan.png" alt="Image 1">
                 </div>
 
                 <div class="grid-item">
                   <h3>Archi</h3>
-                  <img src="../../public/icons/pp/archi.png" alt="Image 2">
+                  <img class="picture" src="../../public/icons/pp/archi.png" alt="Image 2">
                 </div>
 
                 <div class="grid-item">
                   <h3>Colibry</h3>
-                  <img src="../../public/icons/pp/colibry.png" alt="Image 3">
+                  <img class="picture" src="../../public/icons/pp/colibry.png" alt="Image 3">
                 </div>
 
                 <div class="grid-item">
                   <h3>Cyrers</h3>
-                  <img src="../../public/icons/pp/Cyrers.png" alt="Image 4">
+                  <img class="picture" src="../../public/icons/pp/Cyrers.png" alt="Image 4">
                 </div>
 
                 <div class="grid-item">
                   <h3>Dryloxx</h3>
-                  <img src="../../public/icons/pp/Dryloxx.png" alt="Image 5">
+                  <img class="picture" src="../../public/icons/pp/Dryloxx.png" alt="Image 5">
                 </div>
 
                 <div class="grid-item">
                   <h3>Fyne</h3>
-                  <img src="../../public/icons/pp/fyne.png" alt="Image 6">
+                  <img class="picture" src="../../public/icons/pp/fyne.png" alt="Image 6">
                 </div>
 
                 <div class="grid-item">
                   <h3>Hypo</h3>
-                  <img src="../../public/icons/pp/hypo.png" alt="Image 7">
+                  <img class="picture" src="../../public/icons/pp/hypo.png" alt="Image 7">
                 </div>
 
                 <div class="grid-item">
                   <h3>Kazeno</h3>
-                  <img src="../../public/icons/pp/kazenouta.png" alt="Image 8">
+                  <img class="picture" src="../../public/icons/pp/kaze.png" alt="Image 8">
                 </div>
 
                 <div class="grid-item">
                   <h3>Zeph</h3>
-                  <img src="../../public/icons/pp/zeph.png" alt="Image 9">
+                  <img class="picture" src="../../public/icons/pp/zeph.png" alt="Image 9">
                 </div>
               </div>
             </div>
@@ -85,10 +85,13 @@
   text-align: center;
   padding: 20px;
   background-color: white;
-  border-radius: 8%;
+  border-radius: 20px;
   box-shadow: 0.5rem 0.5rem 1rem rgb(0, 0, 0);
 }
 
+.picture{
+  border-radius: 10px;
+}
 .description.texte{
   font-size: 25px;
 }
