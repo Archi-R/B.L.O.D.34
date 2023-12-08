@@ -3,11 +3,7 @@ export const questions = [
         question: "Quelle quantité de CO2 est émise annuellement par l'utilisation mondiale du charbon ?",
         choices: ["Moins de 5 milliards de tonnes", "Entre 5 et 10 milliards de tonnes", "Entre 10 et 15 milliards de tonnes", "Plus de 15 milliards de tonnes"],
         answer: 2, // L'index de la réponse correcte dans le tableau choices
-        explanation: "En 2019, les émissions de CO2 hors UTCATF atteignent 38,0 milliards de tonnes, soit une multiplication par 2,4 depuis 1970. Ces émissions sont issues à :",
-        explanation2: "- 39 % de la combustion de charbon, soit 14,82 milliards de tonnes",
-        explanation3: " - 30 % pour le pétrole, soit 11,4 milliards de tonnes",
-        explanation4 : "- 19 % pour le gaz naturel, soit 7,22 milliards de tonnes",
-        explanation5 : " - Le reste, soit 12 %, est lié aux procédés industriels (comme, par exemple, la transformation de calcaire en chaux pour fabriquer du ciment).",
+        explanation: "En 2019, les émissions de CO2 hors UTCATF atteignent 38,0 milliards de tonnes, soit une multiplication par 2,4 depuis 1970. Ces émissions sont issues à 39 % de la combustion de charbon, soit 14,82 milliards de tonnes, 30 % pour le pétrole, soit 11,4 milliards de tonnes, 19 % pour le gaz naturel, soit 7,22 milliards de tonnes, et le reste, soit 12 %, est lié aux procédés industriels (comme, par exemple, la transformation de calcaire en chaux pour fabriquer du ciment).",
         sources: "https://www.statistiques.developpement-durable.gouv.fr/edition-numerique/chiffres-cles-du-climat-2022/6-emissions-de-co2-hors-utcatf#:~:text=En%202019%2C%20les%20%C3%A9missions%20de,19%20%25%20pour%20le%20gaz%20naturel."
     },
 
