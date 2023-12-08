@@ -1,7 +1,14 @@
-<!-- <template>
+<template>
 
     <q-page class="flex flex-center">
-      <iframe src="../html/Histoire_du_Blue_Lobster.html" frameborder="0" width="100%" height="100%"></iframe>
+      <q-parallax :height="500" :speed="0.5">
+        
+        <img src="../../public/icons/portrait.png" alt="Image 1">
+      
+        
+    </q-parallax>
+
+      <h1>Salut</h1>
     </q-page>
 
 </template>
@@ -12,8 +19,10 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'LobsterFront',
 });
-</script> -->
+</script>
 
+
+<!-- 
 <script>
 export default {
   setup () {
@@ -71,4 +80,4 @@ export default {
     width: 100%;
     max-width: 350px
   }
-</style>
+</style> -->

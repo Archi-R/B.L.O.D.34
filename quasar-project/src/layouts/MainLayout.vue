@@ -62,12 +62,8 @@ import QcmCard from '../components/QcmCard.vue'
 
 export default {
   components:{
-    QcmCard,
   },
   name: 'MainLayout',
-  components: {
-    //HomeFront,
-  },
   data() {
     return {
 

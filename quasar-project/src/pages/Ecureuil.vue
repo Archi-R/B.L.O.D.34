@@ -9,8 +9,14 @@
       </div>
 
       <!-- Espace pour l'image -->
-      <div class="q-mb-md">
-        <img src="lien_vers_votre_image.jpg" alt="Image descriptive" style="width: 100%; height: auto;">
+      <transition name="slide">
+        <div class="q-mb-md woosh" key="woosh" v-if="isVisible">
+          <img src="../../public/icons/squirrel.png" alt="Image descriptive" style="width: 100%; height: auto;">
+        </div>
+      </transition>
+
+      <div class="trigger" vue-observe-visibility="handleVisibility">
+        <q-btn label="trigger" color="primary" @click="handleVisibility" />
       </div>
 
       <!-- Bouton Démarrer -->
@@ -22,19 +28,51 @@
 
 <style>
 /* Ajoutez ici des styles supplémentaires si nécessaire */
+.woosh{
+  /* animation: fadeIn 0.5s ease; */
+  transition: transform 0.5s ease;
+}
+
+@keyframes fadeIn{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.slide-enter,
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
 </style>
 
 
 <script lang="ts">
+import VueObserveVisibility from 'vue-observe-visibility';
 import { defineComponent } from 'vue';
 export default defineComponent({
+  data() {
+    return {
+      isVisible:false as boolean
+    }
+  },
   name: 'EcureuilFront',
   methods: {
+    handleVisibility(this: { isVisible: boolean }){
+      this.isVisible = !this.isVisible;
+    },
     startQuiz() {
       // Logique pour démarrer le QCM
       // Par exemple, naviguer vers une autre page ou changer l'état du composant
       console.log("Démarrage du QCM");
     }
+  },
+  directives:{
+    'observe-visibility': VueObserveVisibility as any
   }
 });
 </script>
