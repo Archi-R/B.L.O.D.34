@@ -11,6 +11,7 @@ const routes: RouteRecordRaw[] = [
       { path: 'Ecureuil', component: () => import('pages/Ecureuil.vue')},
       { path: 'Lobster', component: () => import('pages/Lobster.vue')},
       { path: 'Questions', component: () => import('pages/Questions.vue')},
+      { path: 'Card', component: () => import('pages/Card.vue')},
     ]
   },
 
