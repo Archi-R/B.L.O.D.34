@@ -1,7 +1,7 @@
 <template>
     <q-page class="flex flex-center">
 
-        <q-parallax :height="3500">
+        <q-parallax :height="2000" :speed="1">
             <template v-slot:media> 
                 <img src="../../public/icons/bg.jpg">
                 
@@ -76,25 +76,8 @@
             </div>
 
         </q-parallax>
-
-        
-
-        <!-- <q-parallax :height="1200" :speed="0.5">
-            <div class="layer-container">
-                <img src="../../public/icons/test.jpg" alt="Layer 1a">
-                <img src="../../public/icons/test.jpg" alt="Layer 1b">
-            </div>
-
-            
-         
-        </q-parallax> -->
-        
+ 
     </q-page> 
-
-    <q-layout view="lHh Lpr fff">
-        <q-btn flat @click="$router.push('/Lobster')">Lobster</q-btn>
-        <q-btn flat @click="$router.push('/Ecureuil')">Ecureuil</q-btn>
-    </q-layout>
  
 </template>
 

@@ -33,21 +33,14 @@
   transition: transform 0.5s ease;
 }
 
-.slide-fade-enter-active {
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.slide-fade-leave-active {
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
 .slide-enter-active,
 .slide-leave-active {
-  transform: translateX(-100%);
+  transform: translateX(-310%);
 }
 
 .slide-enter,
 .slide-leave-to {
-  transform: translateX(-100%);
+  transform: translateX(-310%);
 }
 
 </style>
