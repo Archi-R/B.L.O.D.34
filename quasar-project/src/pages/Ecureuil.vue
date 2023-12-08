@@ -40,12 +40,12 @@
 
 .slide-enter-active,
 .slide-leave-active {
-  transition: transform 0.5s ease;
+  transform: translateX(-100%);
 }
 
 .slide-enter,
 .slide-leave-to {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 </style>
