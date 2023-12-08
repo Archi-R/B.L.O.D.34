@@ -1,11 +1,11 @@
 <template>
     <q-page class="flex flex-center">
-        <h1>Perturbation</h1>
-        <p>Azuré est témoin de la perturbation de son propre environnement à mesure que les activités humaines continuent de modifier son habitat naturel.
+        <h1>Perturbation de l'environnement</h1>
+        <p class="texte">Azuré est témoin de la perturbation de son propre environnement à mesure que les activités humaines continuent de modifier son habitat naturel.
             Il s'efforce de trouver un équilibre entre la cohabitation et la préservation de son monde sous-marin.
             À travers ces événements, Azuré le lobster bleu devient le héros d'une histoire qui souligne l'urgence de préserver nos océans et explore les différentes facettes de la relation complexe entre les humains et les écosystèmes marins.
         </p>
-        <div>
+        <div class="choix">
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -31,7 +31,7 @@
         </router-link>
 
         <router-link to="/Histoire/PriseMesure">
-            <q-btn color="white" text-color="black" label="Mesures"></q-btn>
+            <q-btn color="white" text-color="black" label="La température environnante lui semble plus élevée qu'elle ne devrait l'être"></q-btn>
         </router-link>
 
         <router-link to="/Histoire/Introduction">
@@ -48,8 +48,30 @@
     import { defineComponent } from 'vue'
     export default defineComponent({
       name: 'Chemin-Perturbation',
-      components: {
-      }
+      
     });
     </script>
     
+<style>
+.choix {
+    display:flex;
+    flex-direction: column;
+}
+
+.choix q-btn {
+    background-color :none;
+    box-shadow : none;
+    border-width:
+}
+
+q-btn {
+    background-color:none; 
+    box-shadow:none;
+    border-width:0px;
+}
+
+.texte{
+    max-width : 85%;
+    font-size : 1.5em;
+}
+</style>

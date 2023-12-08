@@ -4,16 +4,16 @@
         
         <h1>Acidification</h1> 
         
-        <p> 
+        <p class="texte"> 
             En explorant des eaux plus profondes, Azuré ressent les effets de l'acidification des océans.
             Il observe la détérioration des coquilles et carapaces, alertant sur les conséquences de cette menace invisible.
             Bernard, un ermite seul sur son rocher : "Je ne me sens plus en sécurité, ma coquille est toute trouée"
         </p>
-        <div>
+        <div class="choix"  >
             <router-link to="/Histoire/Gulfstream">
                 <q-btn color="white" text-color="black" label="Les flots de mer chauds le guidaient vers de nouveaux horizons"></q-btn>
             </router-link>
-        
+
             <router-link to="/Histoire/Dechet">
                 <q-btn color="white" text-color="black" label="Lors de ses aventures, il a vu des bancs d'objets flottants qui bloquaient la lumière"></q-btn>
             </router-link>
@@ -31,7 +31,7 @@
             </router-link>
                 
             <router-link to="/Histoire/Perturbations">
-                <q-btn color="white" text-color="black" label="Perturbations"></q-btn>
+                <q-btn color="white" text-color="black" label="Perturbation de l'environnement"></q-btn>
             </router-link>
         
             <router-link to="/Histoire/PriseMesure">
@@ -45,9 +45,6 @@
         
     </q-page>
 
-
-
-    
 </template>
     
     
@@ -60,4 +57,27 @@
     });
     </script>
     
+    <style>
+.choix {
+    display:flex;
+    flex-direction: column;
+}
+
+.choix q-btn {
+    background-color :none;
+    box-shadow : none;
+    border-width:
+}
+
+q-btn {
+    background-color:none; 
+    box-shadow:none;
+    border-width:0px;
+}
+
+.texte{
+    max-width : 85%;
+    font-size : 1.5em;
+}
+</style>
     

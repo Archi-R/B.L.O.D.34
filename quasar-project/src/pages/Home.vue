@@ -34,26 +34,16 @@
                 
                 <div class="characters-container">
                     <p>
-                        Azuré est un petit homard bleu vif, sensible à la cause écologique et d'une curiosité insatiable.
-                        Par rapport à d'autres homards, Azuré se distingue par son désir profond de protéger les océans et leurs habitants.
-                        Azuré est un fervent défenseur de la vie marine.
-                        Il s'implique activement dans des actions visant à sensibiliser les autres habitants des océans sur l'importance de préserver leur habitat naturel.
-                        Que ce soit en participant au nettoyage des océans, en sensibilisant d'autres homards et poissons sur la pollution plastique ou en encourageant la préservation des récifs coralliens,
+                        Azuré est un petit homard bleu, sensible à la cause écologique et d'une curiosité insatiable.
+                        Azuré est un fervent défenseur de la vie marine, il s'implique activement dans des actions visant à sensibiliser les autres habitants des océans sur l'importance de préserver leur habitat naturel.
+                        Que ce soit en sensibilisant d'autres homards et poissons sur la pollution plastique ou en encourageant la préservation des récifs coralliens,
                         Azuré est toujours prêt à agir pour la protection des écosystèmes marins fragiles.
                     </p>
 
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Scelerisque felis imperdiet proin fermentum leo vel orci porta non. 
-                    Pretium fusce id velit ut tortor pretium. 
-                    Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. 
-                    Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. 
-                    Molestie ac feugiat sed lectus vestibulum. Massa enim nec dui nunc mattis enim. 
-                    Consequat semper viverra nam libero justo laoreet sit amet. 
-                    Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. 
-                    Neque sodales ut etiam sit amet nisl purus in mollis. 
-                    Suspendisse sed nisi lacus sed viverra tellus in hac habitasse.
+                        Ekirey est un petit écureuil, fervent partisan des énergies renouvelables dans la forêt.
+                        Il se consacre à promouvoir l'utilisation d'énergies propres et durables parmi ses compagnons de la vie sauvage.
+                        Toujours à l'avant-garde des nouvelles technologies, Ekirey explore et expérimente des moyens novateurs pour utiliser les ressources naturelles de manière responsable.
                     </p>
                 </div> 
             </div>

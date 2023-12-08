@@ -1,7 +1,7 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Deversement Petrole</h1>
-        <p>Alors perché sur un rocher pour faire une sa sieste quotidienne, Azuré voit la nuit se lever, il ne comprend pas car il n'est que 7h.
+        <p class="texte">Alors perché sur un rocher pour faire une sa sieste quotidienne, Azuré voit la nuit se lever, il ne comprend pas car il n'est que 7h.
             C'est ainsi qu'il décide de faire une petite reconnaissance en remontant à la surface.
             Là, un cauchemar l'attend.
             Azuré est confronté à une marée noire dévastatrice.
@@ -12,7 +12,8 @@
             Il essaie de comprendre alors comment ce serait possible de palier ce problème.
             Il répondit alors à Momo : "Est ce que ce serait possible de faire une loi internationale interdisant cette opération ?".
         </p>
-        <div>
+
+        <div class="choix">
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -34,11 +35,11 @@
         </router-link>
             
         <router-link to="/Histoire/Perturbations">
-            <q-btn color="white" text-color="black" label="Perturbations"></q-btn>
+            <q-btn color="white" text-color="black" label="Il constata que l'environnement n'etait pas celui dont il se souvenait"></q-btn>
         </router-link>
     
         <router-link to="/Histoire/PriseMesure">
-            <q-btn color="white" text-color="black" label="Réchauffement"></q-btn>
+            <q-btn color="white" text-color="black" label="La température environnante lui semble plus élevée qu'elle ne devrait l'être"></q-btn>
         </router-link>
 
         <router-link to="/Histoire/Introduction">
@@ -48,15 +49,36 @@
         </div>
     </q-page>
     
-    </template>
+</template>
     
     
-    <script lang="ts">
+<script lang="ts">
     import { defineComponent } from 'vue'
     export default defineComponent({
       name: 'Chemin-Deversement-Petrole',
-      components: {
-      }
     });
-    </script>
+</script>
     
+<style>
+.choix {
+    display:flex;
+    flex-direction: column;
+}
+
+.choix q-btn {
+    background-color :none;
+    box-shadow : none;
+    border-width:
+}
+
+q-btn {
+    background-color:none; 
+    box-shadow:none;
+    border-width:0px;
+}
+
+.texte{
+    max-width : 85%;
+    font-size : 1.5em;
+}
+</style>

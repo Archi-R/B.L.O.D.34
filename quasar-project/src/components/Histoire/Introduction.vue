@@ -38,11 +38,11 @@
     </router-link>
 
     <router-link to="/Histoire/Perturbations">
-        <q-btn color="white" text-color="black" label="Perturbations"></q-btn>
+        <q-btn color="white" text-color="black" label="Il constata que l'environnement n'etait pas celui dont il se souvenait"></q-btn>
     </router-link>
 
     <router-link to="/Histoire/PriseMesure">
-        <q-btn color="white" text-color="black" label="Mesures"></q-btn>
+        <q-btn color="white" text-color="black" label="La température environnante lui semble plus élevée qu'elle ne devrait l'être"></q-btn>
     </router-link>
     </div>   
     

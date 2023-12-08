@@ -1,12 +1,12 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Prise Mesure</h1>
-        <p>C'est alors que notre cher homard croise un voilier qu'il connait déjà bien : c'est le Tara.
+        <p class="texte">C'est alors que notre cher homard croise un voilier qu'il connait déjà bien : c'est le Tara.
             Il sait que ce sont des humains qui font des recherches scientifiques pour défendre l'environnement.
             Quelques jours plus tard, Azuré fait la rencontre de scientifiques marins travaillant à installer des capteurs près du récif de corail où il se trouve, pour surveiller les changements et prendre des mesures visant à sauvegarder l'écosystème.
             Azuré devient un messager, transmettant ces informations cruciales aux autres habitants des océans.
         </p>
-        <div>
+        <div class="choix">
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -32,7 +32,7 @@
         </router-link>
 
         <router-link to="/Histoire/Perturbations">
-            <q-btn color="white" text-color="black" label="Perturbations"></q-btn>
+            <q-btn color="white" text-color="black" label="Il constata que l'environnement n'etait pas celui dont il se souvenait"></q-btn>
         </router-link>
 
         <router-link to="/Histoire/Introduction">
@@ -50,8 +50,29 @@
     import { defineComponent } from 'vue'
     export default defineComponent({
       name: 'Chemin-Prise-Mesure',
-      components: {
-      }
     });
 </script>
     
+<style>
+.choix {
+    display:flex;
+    flex-direction: column;
+}
+
+.choix q-btn {
+    background-color :none;
+    box-shadow : none;
+    border-width:
+}
+
+q-btn {
+    background-color:none; 
+    box-shadow:none;
+    border-width:0px;
+}
+
+.texte{
+    max-width : 85%;
+    font-size : 1.5em;
+}
+</style>
