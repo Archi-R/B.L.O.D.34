@@ -10,7 +10,7 @@
 
       <!-- Espace pour l'image -->
       <div class="q-mb-md">
-        <img src="lien_vers_votre_image.jpg" alt="Image descriptive" style="width: 100%; height: auto;">
+
       </div>
 
       <!-- Bouton Démarrer -->
