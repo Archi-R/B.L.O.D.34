@@ -1,16 +1,16 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Deversement Petrole</h1>
-        <p>Alors perché sur un rocher pour faire une sa sieste quotidienne, Azuré voit la nuit se lever, il ne comprend pas car il n'est que 7h.<br>
-            C'est ainsi qu'il décide de faire une petite reconnaissance en remontant à la surface.<br>
-            Là, un cauchemar l'attend.<br>
-            Azuré est confronté à une marée noire dévastatrice.<br>
-            Il se bat pour survivre dans une mer souillée tout en témoignant des effets dévastateurs du déversement de pétrole sur la faune et la flore marines.<br>
-            Notre cher homard voit alors "Momo", une mouette rieuse.<br>
-            Azuré lui demande alors : "Comment cela ce fait-il qu'autant de pétrole contamine l'océan ?".<br>
-            Il apprend alors que ça a été causé par le dégazage (débalastage) d'un pétrolier.<br>
-            Il essaie de comprendre alors comment ce serait possible de palier ce problème.<br>
-            Il répondit alors à Momo : "Est ce que ce serait possible de faire une loi internationale interdisant cette opération ?".<br>
+        <p>Alors perché sur un rocher pour faire une sa sieste quotidienne, Azuré voit la nuit se lever, il ne comprend pas car il n'est que 7h.
+            C'est ainsi qu'il décide de faire une petite reconnaissance en remontant à la surface.
+            Là, un cauchemar l'attend.
+            Azuré est confronté à une marée noire dévastatrice.
+            Il se bat pour survivre dans une mer souillée tout en témoignant des effets dévastateurs du déversement de pétrole sur la faune et la flore marines.
+            Notre cher homard voit alors "Momo", une mouette rieuse.
+            Azuré lui demande alors : "Comment cela ce fait-il qu'autant de pétrole contamine l'océan ?".
+            Il apprend alors que ça a été causé par le dégazage (débalastage) d'un pétrolier.
+            Il essaie de comprendre alors comment ce serait possible de palier ce problème.
+            Il répondit alors à Momo : "Est ce que ce serait possible de faire une loi internationale interdisant cette opération ?".
         </p>
     
         <router-link to="/Histoire/Acidification">

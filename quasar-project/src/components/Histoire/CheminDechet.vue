@@ -1,16 +1,16 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Dechets</h1>
-        <p>Ainsi lorsque notre homard se dirigea vers les fond marins, il rencontra une crevette nageant dans les déchets, il lui demanda : "Depuis quand est-ce comme cela ?", elle répondit : "Ça ne fait qu'empirer".<br>
-            Notre homard réfléchit donc à comment ces problèmes pourraient être réglés et se rappela des initiatives pour nettoyer les plages.<br>
-            Après ceci, Azuré se dirigea vers d'autres aventures.<br>
-            En se déplaçant vers des profondeurs plus importantes, Azuré est témoin du déversement irresponsable de déchets depuis la surface.<br>
-            Il ressent les effets néfastes sur son environnement et s'efforce de sensibiliser les autres habitants des océans.<br>
-            A une tortue mangeant un sac plastique :"Arrête, ce n'est pas une méduse, ces sacs plastiques nous pourissent la vie.<br>
-            Heureusement, ces gens nous sauvent la vie."<br>
-            Ce sont des bateaux dépollueurs qui ramassent les déchets.<br>
-            "En plus, leurs filets sont conçus de manière à ce que l'on ne se coince pas dedans.<br>
-            Ce sont les héros qui empèchent la formation d'un 8e continent."<br>
+        <p>Ainsi lorsque notre homard se dirigea vers les fond marins, il rencontra une crevette nageant dans les déchets, il lui demanda : "Depuis quand est-ce comme cela ?", elle répondit : "Ça ne fait qu'empirer".
+            Notre homard réfléchit donc à comment ces problèmes pourraient être réglés et se rappela des initiatives pour nettoyer les plages.
+            Après ceci, Azuré se dirigea vers d'autres aventures.
+            En se déplaçant vers des profondeurs plus importantes, Azuré est témoin du déversement irresponsable de déchets depuis la surface.
+            Il ressent les effets néfastes sur son environnement et s'efforce de sensibiliser les autres habitants des océans.
+            A une tortue mangeant un sac plastique :"Arrête, ce n'est pas une méduse, ces sacs plastiques nous pourissent la vie.
+            Heureusement, ces gens nous sauvent la vie."
+            Ce sont des bateaux dépollueurs qui ramassent les déchets.
+            "En plus, leurs filets sont conçus de manière à ce que l'on ne se coince pas dedans.
+            Ce sont les héros qui empèchent la formation d'un 8e continent."
         </p>
     
         <router-link to="/Histoire/Acidification">

@@ -2,13 +2,13 @@
 <template>
     <q-page class="flex flex-center">
     <h1>Gulfstream</h1>
-    <p>Azuré voyage le long du Gulf Stream, découvrant les mystères de cette puissante circulation océanique qui influence le climat mondial.<br>
-        Il prend conscience de l'importance de préserver cet équilibre fragile.<br>
-        Notre homard voyageant au travers du monde fit un arrêt au bord d'une plage, il découvrit une loutre nommée Gus.<br>
-        Cette loutre parlait beaucoup et évoqua à un moment ses inquiétudes sur les courants marins. Il parla d'un courant important pour son environnement, le Gulfstream et de la peur de sa disparition.<br>
+    <p>Azuré voyage le long du Gulf Stream, découvrant les mystères de cette puissante circulation océanique qui influence le climat mondial.
+        Il prend conscience de l'importance de préserver cet équilibre fragile.
+        Notre homard voyageant au travers du monde fit un arrêt au bord d'une plage, il découvrit une loutre nommée Gus.
+        Cette loutre parlait beaucoup et évoqua à un moment ses inquiétudes sur les courants marins. Il parla d'un courant important pour son environnement, le Gulfstream et de la peur de sa disparition.
         Azuré intéressé lui demanda pourquoi disparaîtrait-il et Gus répondit :
-        "Ces actions pourraient mettre en péril mon espèce à cause des changements de température drastiques qu'elles provoqueraient, la seule solution que je vois est de diminuer la pollution afin de ne pas provoquer la disparition de ce dernier".<br>
-        A travers cette discussion, Azuré compris l'importance de ces enjeux.<br>
+        "Ces actions pourraient mettre en péril mon espèce à cause des changements de température drastiques qu'elles provoqueraient, la seule solution que je vois est de diminuer la pollution afin de ne pas provoquer la disparition de ce dernier".
+        A travers cette discussion, Azuré compris l'importance de ces enjeux.
     </p>
 
 

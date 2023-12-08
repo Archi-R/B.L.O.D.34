@@ -1,9 +1,9 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Perturbation</h1>
-        <p>Azuré est témoin de la perturbation de son propre environnement à mesure que les activités humaines continuent de modifier son habitat naturel.<br>
-            Il s'efforce de trouver un équilibre entre la cohabitation et la préservation de son monde sous-marin.<br>
-            À travers ces événements, Azuré le lobster bleu devient le héros d'une histoire qui souligne l'urgence de préserver nos océans et explore les différentes facettes de la relation complexe entre les humains et les écosystèmes marins.<br>
+        <p>Azuré est témoin de la perturbation de son propre environnement à mesure que les activités humaines continuent de modifier son habitat naturel.
+            Il s'efforce de trouver un équilibre entre la cohabitation et la préservation de son monde sous-marin.
+            À travers ces événements, Azuré le lobster bleu devient le héros d'une histoire qui souligne l'urgence de préserver nos océans et explore les différentes facettes de la relation complexe entre les humains et les écosystèmes marins.
         </p>
     
         <router-link to="/Histoire/Acidification">
