@@ -62,12 +62,16 @@
 
             <div class="characters-image">
                 <div class="column">
-                    <h1>Azuré</h1>
-                    <img src="../../public/icons/lobster.png" alt="Lobster" class="lobster_img">
+                    <router-link to="/Lobster">
+                        <h1>Azuré</h1>
+                        <img src="../../public/icons/lobster.png" alt="Lobster" class="lobster_img">
+                    </router-link>
                 </div>
                 <div class="column">
-                    <h1>Ekirey</h1>
-                    <img src="../../public/icons/squirrel.png" alt="Squirrel" class="squirrel_img">
+                    <router-link to="/Ecureuil">
+                        <h1>Ekirey</h1>
+                        <img src="../../public/icons/squirrel.png" alt="Squirrel" class="squirrel_img">
+                    </router-link>
                 </div>   
             </div>
 
@@ -200,6 +204,12 @@ export default defineComponent({
     font-weight: bold;
 }
 
+.characters-image .column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .characters-image .lobster_img {
     width: 70%;
@@ -215,6 +225,22 @@ export default defineComponent({
     /* center the image */
     margin-left: auto;
     margin-right: auto;
+}
+
+.characters-image .column:hover {
+    background-color: var(--q-primary);
+    color: white;
+    border-radius: 1rem;
+}
+
+.characters-image .column:hover h1 {
+    color: white;
+}
+
+
+.characters-image a {
+    text-decoration: none;
+    color: var(--q-dark);
 }
 
 
