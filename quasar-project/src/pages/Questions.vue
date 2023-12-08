@@ -20,6 +20,7 @@
       <!-- Div pour le bouton Suivant -->
       <div>
         <!--<q-btn label="Suivant" @click="loadNextQuestion" />-->
+
       </div>
     </div>
   </q-page>
