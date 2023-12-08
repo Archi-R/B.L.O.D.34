@@ -1,8 +1,8 @@
 <template>
-    <q-parallax :height="3500" :offset="0">
-            <template v-slot:media> 
-                <img src="../../public/icons/bg.jpg">
-            </template>
+    <q-parallax :height="2400" :speed="1">
+            <template v-slot:media>
+                <img src="../../public/icons/planet.jpg" class="layer"/>
+            </template> 
 
             <div class="description">
               <h2>Présentation</h2>

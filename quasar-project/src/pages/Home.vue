@@ -1,36 +1,27 @@
 <template>
     <q-page class="flex flex-center">
 
-        <q-parallax :height="2000" :speed="1">
-            <template v-slot:media> 
-                <div class="parallax-container">
-                    <img src="../../public/icons/ocean.jpg" class="layer1" />
-                    <img src="../../public/icons/foret.jpg" class="layer2" />
-                </div>
- 
-            </template>
-        
-            <div class="presentation">
-                <h2>Présentation</h2>
+        <q-parallax :height="2400" :speed="1">
+            <template v-slot:media>
+                <img src="../../public/icons/planet.jpg" class="layer"/>
+            </template> 
+                <div class="presentation">
+                    <h2>Présentation</h2>
                     <div class="pres-txt">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Scelerisque felis imperdiet proin fermentum leo vel orci porta non. 
-                            Pretium fusce id velit ut tortor pretium. 
-                            Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet. 
-                            Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. 
-                            Molestie ac feugiat sed lectus vestibulum. Massa enim nec dui nunc mattis enim. 
-                            Consequat semper viverra nam libero justo laoreet sit amet. 
-                            Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. 
-                            Neque sodales ut etiam sit amet nisl purus in mollis. 
-                            Suspendisse sed nisi lacus sed viverra tellus in hac habitasse.
+                        <p class="texte">
+                            Bienvenue sur notre site dédié à la sensibilisation sur le changement climatique, créé à l'occasion de la Nuit de l'Info. 
+                            Explorez deux histoires interactives mettant en lumière les défis environnementaux et faites des choix cruciaux pour façonner le dénouement. 
+                            Testez ensuite vos connaissances avec un QCM sur les solutions face au changement climatique. 
                         </p>
+                        <p class="texte">    
+                            Engagez-vous dans cette expérience immersive et découvrez comment vos choix peuvent impacter la préservation de notre planète. 
+                            Ensemble, œuvrons pour un avenir durable.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="character-details">
-                <h2>Personnages</h2>
+
+                <div class="character-details">
+                    <h2>Personnages</h2>
                 
                 <div class="characters-container">
                     <p>
@@ -48,21 +39,20 @@
                 </div> 
             </div>
 
-            <div class="characters-image">
-                <div class="column">
-                    <router-link to="/Histoire">
-                        <h1>Azuré</h1>
-                        <img src="../../public/icons/lobster.png" alt="Lobster" class="lobster_img">
-                    </router-link>
+                <div class="characters-image">
+                    <div class="column">
+                        <router-link to="/Histoire">
+                            <h1>Azuré</h1>
+                            <img src="../../public/icons/lobster.png" alt="Lobster" class="lobster_img">
+                        </router-link>
+                    </div>
+                    <div class="column">
+                        <router-link to="/Ecureuil">
+                            <h1>Ekirey</h1>
+                            <img src="../../public/icons/squirrel.png" alt="Squirrel" class="squirrel_img">
+                        </router-link>
+                    </div>   
                 </div>
-                <div class="column">
-                    <router-link to="/Ecureuil">
-                        <h1>Ekirey</h1>
-                        <img src="../../public/icons/squirrel.png" alt="Squirrel" class="squirrel_img">
-                    </router-link>
-                </div>   
-            </div>
-
         </q-parallax>
  
     </q-page> 
@@ -76,16 +66,19 @@ import { defineComponent } from 'vue';
 export default defineComponent({
     name: 'HomeFront',
 });
+
 </script>
 
 <style>
 
 /* Parallax */
 
-.parallax-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.layer {
+    zoom: 75%;
+}
+
+.texte{
+    font-size: 1.2em;
 }
 
 /* Présentation */
@@ -206,7 +199,7 @@ export default defineComponent({
 }
 
 .characters-image .column:hover {
-    background-color: var(--q-primary);
+    background-color: var(--q-accent);
     color: white;
     border-radius: 1rem;
 }
