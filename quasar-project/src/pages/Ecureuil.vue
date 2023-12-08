@@ -20,7 +20,8 @@
       </div>
 
       <!-- Bouton Démarrer -->
-      <q-btn label="Démarrer" color="primary" @click="startQuiz" />
+
+      <q-btn flat @click="$router.push('/EQuestions')">Démarrer le questionnaire</q-btn>
     </div>
   </q-page>
 </template>
@@ -53,6 +54,7 @@ export default defineComponent({
       isVisible:false as boolean
     }
   },
+
   name: 'EcureuilFront',
   methods: {
     handleVisibility(this: { isVisible: boolean }){

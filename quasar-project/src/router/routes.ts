@@ -10,10 +10,10 @@ const routes: RouteRecordRaw[] = [
       { path: '/', component: () => import('pages/Home.vue')},
       { path: 'questions', component: () => import('pages/QuestionsPage.vue') },
       { path: 'Ecureuil', component: () => import('pages/Ecureuil.vue')},
-      { path: 'Lobster', component: () => import('pages/lobster.vue')},
-      { path: 'Questions', component: () => import('pages/Questions.vue')},
       { path: 'Presentez-nous', component: () => import('pages/Presentez-nous.vue')},
       { path: 'Histoire', component: () => import('pages/HistoireLobster.vue')},
+      { path: 'Lobster', component: () => import('pages/Lobster.vue')},
+      { path: 'EQuestions', component: () => import('pages/Questions.vue')},
     ]
   },
     {
@@ -30,7 +30,7 @@ const routes: RouteRecordRaw[] = [
         { path : 'Epave', component: () => import('components/Histoire/CheminEpave.vue')},
         { path : 'Perturbations', component: () => import('components/Histoire/CheminPerturbation.vue')},
         { path : 'PriseMesure', component: () => import('components/Histoire/CheminPriseMesure.vue')},
-      ] 
+      ]
     },
       {
       path:'/api/questions/:id',// RECUP ID DU COMPONENT
