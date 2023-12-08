@@ -14,7 +14,8 @@
       </div>
 
       <!-- Bouton Démarrer -->
-      <q-btn label="Démarrer" color="primary" @click="startQuiz" />
+
+      <q-btn flat @click="$router.push('/Questions')">Démarrer le questionnaire</q-btn>
     </div>
   </q-page>
 </template>
@@ -29,12 +30,5 @@
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'EcureuilFront',
-  methods: {
-    startQuiz() {
-      // Logique pour démarrer le QCM
-      // Par exemple, naviguer vers une autre page ou changer l'état du composant
-      console.log("Démarrage du QCM");
-    }
-  }
 });
 </script>
