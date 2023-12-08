@@ -1,19 +1,20 @@
 <template>
   <q-page class="flex flex-center">
-    <div>
-      <!-- Carte pour la question -->
+    <div class="background-with-filter">
+    <!-- Carte pour la question -->
       <div class="testCard" v-if="questions.length > 0" id="carte">
         <div class="question">{{ questions[currentQuestionIndex].question }}</div>
 
         <div class="answers">
           <div v-for="(answer, index) in questions[currentQuestionIndex].choices" :key="index">
-            <input type="radio" :class="'answer' + index" :name="currentQuestionIndex" :id="'answer' + index">
+            <input type="radio" :id="'answer' + index" :name="'question' + currentQuestionIndex" :disabled="showExplanation" @click="selectAnswer(index)">
             <label :for="'answer' + index">{{ answer }}</label>
-            <!-- Ici, vous pouvez ajouter la logique pour afficher l'icône de correction -->
+            <img v-if="showExplanation && index === questions[currentQuestionIndex].answer" src="/icons/verifier.png" class="correctness">
+            <img v-else-if="showExplanation && index === selectedAnswerIndex && index !== questions[currentQuestionIndex].answer" src="/icons/traverser.png" class="correctness">
           </div>
         </div>
 
-        <div class="button-next" @click="loadNextQuestion">
+        <div class="button-next" @click="loadexplication">
           <img class="img-next" src="../../public/icons/suivant.png">
         </div>
       </div>
@@ -24,15 +25,13 @@
       </div>
 
       <!-- Div pour les informations -->
-      <div class="q-mb-md" id="infos">
-        <!-- Ici, vous pouvez afficher des informations supplémentaires ou des feedbacks -->
+      <div class="q-mb-md" id="infos" v-if="showExplanation">
+        {{ questions[currentQuestionIndex].explanation }}
       </div>
 
       <!-- Div pour le bouton Suivant -->
-      <div class="q-mb-md" id="btn_suiv">
-        <!--<q-btn label="Suivant" @click="loadNextQuestion" />-->
-
-
+      <div class="q-mb-md" id="btn_suiv" v-if="showExplanation">
+        <q-btn label="Suivant" @click="loadNextQuestion" />
       </div>
     </div>
   </q-page>
@@ -48,14 +47,21 @@ export default defineComponent({
   data() {
     return {
       currentQuestionIndex: 0,
-      questions: [] as any[]// Les questions seront chargées ici
+      questions: [] as any[],// Les questions seront chargées ici
+      showExplanation: false,
+      selectedAnswerIndex: -1
     };
   },
 
   methods: {
+    selectAnswer(index : number) {
+        this.selectedAnswerIndex = index;
+    },
     loadNextQuestion() {
       if (this.currentQuestionIndex < this.questions.length - 1) {
         this.currentQuestionIndex++;
+        this.showExplanation = false;
+        this.selectedAnswerIndex = -1;
       } else {
         // Gérer la fin du quiz ici
         alert('Fin du quiz');
@@ -63,6 +69,7 @@ export default defineComponent({
     },
 
     loadexplication() {
+      this.showExplanation = true;
       // logique qui affiche le texte d'explication
       // et le bouton
     },
@@ -103,6 +110,11 @@ export default defineComponent({
   font-weight: bold;
   text-align: center;
 }
+#infos{
+  color: #F5F5F5;
+  font-size: 1rem;
+  text-align: center;
+}
 .button-next {
   position: absolute;
   height: 3rem;
@@ -131,9 +143,37 @@ export default defineComponent({
   margin-bottom: 0.5rem;
 }
 .correctness {
-  width: 1rem;
-  height: 1rem;
-  margin-left: 0.5rem;
-  visibility: hidden;
+  width: 1em; /* Taille de l'icône */
+  height: 1em; /* Taille de l'icône */
+  vertical-align: middle; /* Alignement avec le texte */
+}
+
+.background-with-filter {
+  width: 100%;
+  height: 90vh;
+  overflow: auto;
+}
+/*
+@media only screen and (max-width: 620px) {
+  For mobile phones {
+    .question, #imageEK, #infos, #btn_suiv {
+      width: 100%;
+      // responsive imcomplet
+    }
+  }
+}*/
+.background-with-filter::before {
+  /* background-color:#e5e5e5; */
+  background: url("../../public/icons/TreeBackground.jpg") center/cover no-repeat;
+  z-index: -1;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  text-align: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
