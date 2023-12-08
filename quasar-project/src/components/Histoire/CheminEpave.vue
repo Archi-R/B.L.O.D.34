@@ -1,7 +1,7 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Epave</h1>
-        <p>Azuré tombe sur une épave immergée, abritant une diversité de vie marine.<br>
+        <p class="texte">Azuré tombe sur une épave immergée, abritant une diversité de vie marine.<br>
         Il explore les débris et observe comment ces structures peuvent devenir des habitats improbables pour les créatures marines.<br>
         Lors de ses voyages Azuré tomba un jour sur une épave de ce qui lui semblait être un énorme mur de fer.<br>
         Celui-ci vu alors une école de poisson qui sortait non loin de la où il regardait.<br>
@@ -59,4 +59,28 @@
       }
     });
     </script>
+
+<style>
+.choix {
+    display:flex;
+    flex-direction: column;
+}
+
+.choix q-btn {
+    background-color :none;
+    box-shadow : none;
+    border-width:
+}
+
+q-btn {
+    background-color:none; 
+    box-shadow:none;
+    border-width:0px;
+}
+
+.texte{
+    max-width : 85%;
+    font-size : 1.5em;
+}
+</style>
     

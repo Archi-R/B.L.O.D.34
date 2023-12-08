@@ -1,7 +1,7 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Acidification</h1>
-        <p>En explorant des eaux plus profondes, Azuré ressent les effets de l'acidification des océans.<br>
+        <p class="texte">En explorant des eaux plus profondes, Azuré ressent les effets de l'acidification des océans.<br>
             Il observe la détérioration des coquilles et carapaces, alertant sur les conséquences de cette menace invisible.<br>
             Bernard, un ermite seul sur son rocher : "Je ne me sens plus en sécurité, ma coquille est toute trouée"<br>
         </p>
@@ -52,4 +52,28 @@
       }
     });
     </script>
+
+<style>
+.choix {
+    display:flex;
+    flex-direction: column;
+}
+
+.choix q-btn {
+    background-color :none;
+    box-shadow : none;
+    border-width:
+}
+
+q-btn {
+    background-color:none; 
+    box-shadow:none;
+    border-width:0px;
+}
+
+.texte{
+    max-width : 85%;
+    font-size : 1.5em;
+}
+</style>
     

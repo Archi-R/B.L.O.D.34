@@ -1,7 +1,7 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Dechets</h1>
-        <p>Ainsi lorsque notre homard se dirigea vers les fond marins, il rencontra une crevette nageant dans les déchets, il lui demanda : "Depuis quand est-ce comme cela ?", elle répondit : "Ça ne fait qu'empirer".<br>
+        <p class="texte">Ainsi lorsque notre homard se dirigea vers les fond marins, il rencontra une crevette nageant dans les déchets, il lui demanda : "Depuis quand est-ce comme cela ?", elle répondit : "Ça ne fait qu'empirer".<br>
             Notre homard réfléchit donc à comment ces problèmes pourraient être réglés et se rappela des initiatives pour nettoyer les plages.<br>
             Après ceci, Azuré se dirigea vers d'autres aventures.<br>
             En se déplaçant vers des profondeurs plus importantes, Azuré est témoin du déversement irresponsable de déchets depuis la surface.<br>

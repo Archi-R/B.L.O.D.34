@@ -2,7 +2,7 @@
 <template>
     <q-page class="flex flex-center">
     <h1>Gulfstream</h1>
-    <p>Azuré voyage le long du Gulf Stream, découvrant les mystères de cette puissante circulation océanique qui influence le climat mondial.<br>
+    <p class="texte">Azuré voyage le long du Gulf Stream, découvrant les mystères de cette puissante circulation océanique qui influence le climat mondial.<br>
         Il prend conscience de l'importance de préserver cet équilibre fragile.<br>
         Notre homard voyageant au travers du monde fit un arrêt au bord d'une plage, il découvrit une loutre nommée Gus.<br>
         Cette loutre parlait beaucoup et évoqua à un moment ses inquiétudes sur les courants marins. Il parla d'un courant important pour son environnement, le Gulfstream et de la peur de sa disparition.<br>

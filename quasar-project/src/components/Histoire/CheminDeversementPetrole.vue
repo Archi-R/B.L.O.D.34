@@ -1,7 +1,7 @@
 <template>
     <q-page class="flex flex-center">
         <h1>Deversement Petrole</h1>
-        <p>Alors perché sur un rocher pour faire une sa sieste quotidienne, Azuré voit la nuit se lever, il ne comprend pas car il n'est que 7h.<br>
+        <p class="texte">Alors perché sur un rocher pour faire une sa sieste quotidienne, Azuré voit la nuit se lever, il ne comprend pas car il n'est que 7h.<br>
             C'est ainsi qu'il décide de faire une petite reconnaissance en remontant à la surface.<br>
             Là, un cauchemar l'attend.<br>
             Azuré est confronté à une marée noire dévastatrice.<br>

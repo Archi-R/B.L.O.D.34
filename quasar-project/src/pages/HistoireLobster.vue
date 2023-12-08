@@ -9,15 +9,11 @@ import { defineComponent } from 'vue';
 import IntroductionTest from 'components/Histoire/Introduction.vue';
 
 
-
-
 export default defineComponent({ 
     name: 'Histoire-page',
     components: {
         IntroductionTest,
     },
-
-  
 });
 </script>
 
