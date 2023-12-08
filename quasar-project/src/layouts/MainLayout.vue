@@ -42,7 +42,7 @@
           <li>DryloXx</li>
           <li>fynewix</li>
           <li>hypo</li>
-          <li>Kazeno Uta</li>
+          <li>Kaze no Uta</li>
           <li>Zeph</li>
 
         </ul>
@@ -62,12 +62,12 @@ import QcmCard from '../components/QcmCard.vue'
 
 export default {
   components:{
-    QcmCard,
+  //  QcmCard,
   },
   name: 'MainLayout',
-  components: {
+  //components: {
     //HomeFront,
-  },
+  //},
   data() {
     return {
 
