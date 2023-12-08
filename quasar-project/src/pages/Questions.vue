@@ -1,7 +1,8 @@
-<template>
+<template class="main">
   <q-page class="flex flex-center">
     <div class="background-with-filter">
     <!-- Carte pour la question -->
+    <div class="top">
       <div class="testCard" v-if="questions.length > 0" id="carte">
         <div class="question">{{ questions[currentQuestionIndex].question }}</div>
 
@@ -19,19 +20,21 @@
         </div>
       </div>
 
-      <!-- Div pour l'image -->
-      <div class="q-mb-md" id="imageEK">
-        <!-- Ici, vous pouvez afficher une image liée à la question -->
-      </div>
+      <div class="top-right">
+          <!-- Div pour l'image -->
+        <div class="q-mb-md" id="imageEK">
+          <img class="ekirey" :src="'../../public/icons/EK' + (currentQuestionIndex + 1) + '.png'">
+        </div>
 
-      <!-- Div pour les informations -->
-      <div class="q-mb-md" id="infos" v-if="showExplanation">
-        {{ questions[currentQuestionIndex].explanation }}
+        <!-- Div pour les informations -->
+        <div class="q-mb-md" id="infos" v-if="showExplanation">
+          {{ questions[currentQuestionIndex].explanation }}
+        </div>
       </div>
-
+    </div>
       <!-- Div pour le bouton Suivant -->
       <div class="q-mb-md" id="btn_suiv" v-if="showExplanation">
-        <q-btn label="Suivant" @click="loadNextQuestion" />
+        <q-btn label="Suivant" @click="loadNextQuestion" style="border: 2px solid white;"/>
       </div>
     </div>
   </q-page>
@@ -92,17 +95,23 @@ export default defineComponent({
 </script>
 
 <style>
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .testCard {
   background-color: var(--q-secondary);
   width: 25rem;
   height: 20rem;
   border-radius: 2rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   padding: 1rem;
   position: relative;
+  top: 0.5rem;
 }
 .question {
   color: #F5F5F5;
@@ -152,6 +161,55 @@ export default defineComponent({
   width: 100%;
   height: 90vh;
   overflow: auto;
+}
+#btn_suiv {
+  margin-top: 2rem;
+  margin-right: 3rem;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: line;
+}
+#infos {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#imageEK {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+#imageEK img{
+  height: 20rem;
+  width: 20rem;
+}
+.top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 3rem;
 }
 /*
 @media only screen and (max-width: 620px) {
