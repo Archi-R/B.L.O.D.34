@@ -9,7 +9,7 @@
       </div>
 
       <!-- Espace pour l'image -->
-      <transition name="slide">
+      <transition name="fade-slide">
         <div class="q-mb-md woosh" key="woosh" v-if="isVisible">
           <img src="../../public/icons/squirrel.png" alt="Image descriptive" style="width: 100%; height: auto;">
         </div>
@@ -27,10 +27,50 @@
 
 
 <style>
-/* Ajoutez ici des styles supplémentaires si nécessaire */
-.woosh{
-  /* animation: fadeIn 0.5s ease; */
-  transition: transform 0.5s ease;
+.fade-slide-enter-active,
+.fade-slide-leave-active
+{
+  transform: translateX(-100%);
+  transition: transform 0.5s , opacity 0.5s;
+}
+
+.fade-slide-enter,
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+
+}
+</style>
+
+
+<script lang="ts">
+import VueObserveVisibility from 'vue-observe-visibility';
+import { defineComponent } from 'vue';
+export default defineComponent({
+  data() {
+    return {
+      isVisible:false as boolean
+    }
+  },
+  name: 'EcureuilFront',
+  methods: {
+    handleVisibility(this: { isVisible: boolean }){
+      this.isVisible = !this.isVisible;
+    },
+    startQuiz() {
+      // Logique pour démarrer le QCM
+      // Par exemple, naviguer vers une autre page ou changer l'état du composant
+      console.log("Démarrage du QCM");
+    }
+  },
+  directives:{
+    'observe-visibility': VueObserveVisibility as any
+  }
+});
+</script>
+
+<!-- .woosh{
 }
 
 .slide-enter-active,
@@ -70,4 +110,4 @@ export default defineComponent({
     'observe-visibility': VueObserveVisibility as any
   }
 });
-</script>
+</script> -->

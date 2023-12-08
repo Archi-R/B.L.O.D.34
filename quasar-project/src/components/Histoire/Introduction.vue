@@ -1,8 +1,8 @@
 <template>
 <q-page class="flex flex-center">
     <h1>Introduction</h1>
-    <p>Au cœur d'un récif corallien jadis vibrant de couleurs chatoyantes, se déployait un spectacle autrefois éblouissant. Des coraux, témoins silencieux de la vie marine, s'effaçaient peu à peu dans l'éclat terne du blanchissement. Le lobster bleu, nommé Azuré, déambulait dans cet écosystème fragile, sa carapace éclatante contrastant tristement avec le déclin qui l'entourait. Ses antennes ondulaient avec une grâce mélancolique alors qu'il explorait les recoins désertés de son domaine autrefois luxuriant.
-
+    <p class="texte">Au cœur d'un récif corallien jadis vibrant de couleurs chatoyantes, se déployait un spectacle autrefois éblouissant. Des coraux, témoins silencieux de la vie marine, s'effaçaient peu à peu dans l'éclat terne du blanchissement. Le lobster bleu, nommé Azuré, déambulait dans cet écosystème fragile, sa carapace éclatante contrastant tristement avec le déclin qui l'entourait. Ses antennes ondulaient avec une grâce mélancolique alors qu'il explorait les recoins désertés de son domaine autrefois luxuriant.
+        
         Alors qu'il se baladait le long de son récif il rencontra un poisson perroquet, celui-ci lui dit : "tu sais il fut un temps les coraux étaient bien plus goûtus qu'aujourd'hui. Maintenant il ne sont que fades et friables", "Pourquoi donc?" demanda alors le Homard, "Les coraux, ils se meurent" lui indiqua le poisson perroquet."
         Azuré continua alors son chemin en quête de compréhension de ce qui se passait autour de lui.
         Plus il s'éloignait du récif plus celui-ci lui lui semblais en effet fade et mourrant.
@@ -12,7 +12,7 @@
     
 
         
-            
+    <div class="choix">       
     <router-link to="/Histoire/Acidification">
         <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
     </router-link>
@@ -44,7 +44,7 @@
     <router-link to="/Histoire/PriseMesure">
         <q-btn color="white" text-color="black" label="Mesures"></q-btn>
     </router-link>
-        
+    </div>   
     
         
 
@@ -59,3 +59,27 @@ export default defineComponent({
   name: 'Introduction-Test',
 });
 </script>
+
+<style>
+.choix {
+    display:flex;
+    flex-direction: column;
+}
+
+.choix q-btn {
+    background-color :none;
+    box-shadow : none;
+    border-width:
+}
+
+q-btn {
+    background-color:none; 
+    box-shadow:none;
+    border-width:0px;
+}
+
+.texte{
+    max-width : 85%;
+    font-size : 1.5em;
+}
+</style>

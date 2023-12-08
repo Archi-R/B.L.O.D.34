@@ -13,7 +13,7 @@ const routes: RouteRecordRaw[] = [
       { path: 'Lobster', component: () => import('pages/lobster.vue')},
       { path: 'Questions', component: () => import('pages/Questions.vue')},
       { path: 'Presentez-nous', component: () => import('pages/Presentez-nous.vue')},
-      { path: 'HistoireLobster', component: () => import('pages/HistoireLobster.vue')},
+      { path: 'Histoire', component: () => import('pages/HistoireLobster.vue')},
     ]
   },
     {

@@ -26,15 +26,12 @@
     </q-page-container>
 
     <q-footer>
-     <q-toolbar>
-      <q-btn flat @click="$router.push('/')">Accueil</q-btn>
+     <q-toolbar class="container">
+        <q-btn flat @click="$router.push('/')">Accueil</q-btn>
         <q-btn flat @click="$router.push('/Sources')">Sources</q-btn>
         <q-btn flat @click="$router.push('/Presentez-nous')">Présentez-nous !</q-btn>
-        <q-toolbar-title>
-        </q-toolbar-title>
         <div>
-        <h3>Membres</h3>
-        <ul>
+        <ul class="liste">
           <li>Archi</li>
           <li>Cerzen</li>
           <li>Colibry</li>
@@ -86,3 +83,18 @@ export default {
   },
 };
 </script>
+
+<style>
+.container{
+  justify-content: space-between;
+}
+
+.liste{
+  width: 100%;
+  list-style-type: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+</style>

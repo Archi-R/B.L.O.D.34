@@ -3,8 +3,11 @@
 
         <q-parallax :height="2000" :speed="1">
             <template v-slot:media> 
-                <img src="../../public/icons/bg.jpg">
-                
+                <div class="parallax-container">
+                    <img src="../../public/icons/ocean.jpg" class="layer1" />
+                    <img src="../../public/icons/foret.jpg" class="layer2" />
+                </div>
+ 
             </template>
         
             <div class="presentation">
@@ -62,7 +65,7 @@
 
             <div class="characters-image">
                 <div class="column">
-                    <router-link to="/Lobster">
+                    <router-link to="/Histoire">
                         <h1>Azuré</h1>
                         <img src="../../public/icons/lobster.png" alt="Lobster" class="lobster_img">
                     </router-link>
@@ -92,8 +95,15 @@ export default defineComponent({
 
 <style>
 
-/* Présentation */
+/* Parallax */
 
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Présentation */
 
 .presentation {
     display: flex;
