@@ -33,9 +33,11 @@
   transition: transform 0.5s ease;
 }
 
-@keyframes fadeIn{
-  0%{opacity: 0;}
-  100%{opacity: 1;}
+.slide-fade-enter-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.slide-fade-leave-active {
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .slide-enter-active,
