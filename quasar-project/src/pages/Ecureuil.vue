@@ -15,7 +15,7 @@
 
       <!-- Bouton Démarrer -->
 
-      <q-btn flat @click="$router.push('/Questions')">Démarrer le questionnaire</q-btn>
+      <q-btn flat @click="$router.push('/EQuestions')">Démarrer le questionnaire</q-btn>
     </div>
   </q-page>
 </template>

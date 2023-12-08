@@ -27,6 +27,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import axios from 'axios';
 
 export default defineComponent({
   name: 'QuestionPage',
@@ -34,7 +35,7 @@ export default defineComponent({
   data() {
     return {
       currentQuestionIndex: 0,
-      questions: [] // Les questions seront chargées ici
+      questions: [] as any[]// Les questions seront chargées ici
     };
   },
 
@@ -45,8 +46,14 @@ export default defineComponent({
       // Gérer la fin du quiz si toutes les questions ont été posées
     },
 
-    fetchQuestions() {
-      // Charger les questions depuis votre backend ou un fichier local
+    async fetchQuestions() {
+      try {
+        const response = await axios.get('http://localhost:3000/questions'); // Remplacez par l'URL de votre API
+        this.questions = response.data;
+      } catch (error) {
+        console.error('Erreur lors de la récupération des questions:', error);
+        alert('Erreur lors de la récupération des questions');
+      }
     }
   },
 
