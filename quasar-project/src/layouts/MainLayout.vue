@@ -31,14 +31,14 @@
         </div>
         <div>
         <ul class="liste">
-          <li>Archi |&nbsp;</li>
-          <li>Cerzen |&nbsp;</li>
-          <li>Colibry |&nbsp;</li>
-          <li>Cyrers |&nbsp;</li>
-          <li>DryloXx |&nbsp;</li>
-          <li>fynewix |&nbsp;</li>
-          <li>hypo |&nbsp;</li>
-          <li>Kaze no Uta |&nbsp;</li>
+          <li>Archi</li>
+          <li>Cerzen</li>
+          <li>Colibry</li>
+          <li>Cyrers</li>
+          <li>DryloXx</li>
+          <li>Fynewix</li>
+          <li>Hypo</li>
+          <li>Kazeno</li>
           <li>Zeph</li>
         </ul>
       </div>
