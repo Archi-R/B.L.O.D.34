@@ -6,7 +6,7 @@
             Quelques jours plus tard, Azuré fait la rencontre de scientifiques marins travaillant à installer des capteurs près du récif de corail où il se trouve, pour surveiller les changements et prendre des mesures visant à sauvegarder l'écosystème.
             Azuré devient un messager, transmettant ces informations cruciales aux autres habitants des océans.
         </p>
-    
+        <div>
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -29,7 +29,7 @@
     
         <router-link to="/Histoire/Epave">
             <q-btn color="white" text-color="black" label="Il se dirigea vers des mers plus froides"></q-btn>
-        </router-link>*
+        </router-link>
 
         <router-link to="/Histoire/Perturbations">
             <q-btn color="white" text-color="black" label="Perturbations"></q-btn>
@@ -38,18 +38,20 @@
         <router-link to="/Histoire/Introduction">
             <q-btn color="white" text-color="black" label="Retour au début de l'histoire"></q-btn>
         </router-link>
-            
+
+        </div>
     </q-page>
     
     </template>
     
     
-    <script lang="ts">
+<script lang="ts">
+    
     import { defineComponent } from 'vue'
     export default defineComponent({
       name: 'Chemin-Prise-Mesure',
       components: {
       }
     });
-    </script>
+</script>
     

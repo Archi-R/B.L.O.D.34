@@ -12,7 +12,7 @@
         Il semblerait que même si ces épaves peuvent être source d'habitat pour les habitants de l'eau certaines d'entre elles poseront des problèmes tôt ou tard.
         Avec de la chance les humains finiront par s'occuper des épaves qu'ils ont éparpillé sur les sols marins avant que les plus problématiques ne soient source d'un empoisonnement général de la faune et la flore environnantes.
         </p>
-    
+        <div>
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -45,7 +45,7 @@
             <q-btn color="white" text-color="black" label="Retour au début de l'histoire"></q-btn>
         </router-link>
             
-        
+        </div>
     </q-page>
     
     </template>

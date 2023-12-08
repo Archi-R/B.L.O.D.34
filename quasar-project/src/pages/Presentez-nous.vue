@@ -9,7 +9,7 @@
               <p class="texte">Qui sommes nous ?</p>
               <br>
               <p class="texte" >Nous sommes des étudiants en 4ème et 3ème année d'école d'ingénieurs, à
-                l'ENISBS.
+                l'ENSIBS.
                 Le développement d'application web n'est pas notre domaine de prédilection
                 mais c'est avec le plus grand des plaisirs que notre petite équipe de 9 personnes 
                 s'est lancée dans le défi de la Nuit de l'Info.

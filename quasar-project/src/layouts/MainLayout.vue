@@ -32,14 +32,14 @@
         <q-btn flat @click="$router.push('/Presentez-nous')">Présentez-nous !</q-btn>
         <div>
         <ul class="liste">
-          <li>Archi</li>
-          <li>Cerzen</li>
-          <li>Colibry</li>
-          <li>Cyrers</li>
-          <li>DryloXx</li>
-          <li>fynewix</li>
-          <li>hypo</li>
-          <li>Kaze no Uta</li>
+          <li>Archi |&nbsp;</li>
+          <li>Cerzen |&nbsp;</li>
+          <li>Colibry |&nbsp;</li>
+          <li>Cyrers |&nbsp;</li>
+          <li>DryloXx |&nbsp;</li>
+          <li>fynewix |&nbsp;</li>
+          <li>hypo |&nbsp;</li>
+          <li>Kaze no Uta |&nbsp;</li>
           <li>Zeph</li>
 
         </ul>

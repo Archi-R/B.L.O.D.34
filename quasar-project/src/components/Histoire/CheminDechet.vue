@@ -12,7 +12,7 @@
             "En plus, leurs filets sont conçus de manière à ce que l'on ne se coince pas dedans.
             Ce sont les héros qui empèchent la formation d'un 8e continent."
         </p>
-    
+        <div>
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -44,6 +44,7 @@
         <router-link to="/Histoire/Introduction">
             <q-btn color="white" text-color="black" label="Retour au début de l'histoire"></q-btn>
         </router-link>
+        </div>
     </q-page>
     
     </template>

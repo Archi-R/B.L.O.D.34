@@ -5,7 +5,7 @@
             Il s'efforce de trouver un équilibre entre la cohabitation et la préservation de son monde sous-marin.
             À travers ces événements, Azuré le lobster bleu devient le héros d'une histoire qui souligne l'urgence de préserver nos océans et explore les différentes facettes de la relation complexe entre les humains et les écosystèmes marins.
         </p>
-    
+        <div>
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -37,7 +37,7 @@
         <router-link to="/Histoire/Introduction">
             <q-btn color="white" text-color="black" label="Retour au début de l'histoire"></q-btn>
         </router-link>
-            
+        </div>
         
     </q-page>
     

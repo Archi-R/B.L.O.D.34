@@ -9,7 +9,7 @@
         </p>
     
         
-
+        <div>
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -41,7 +41,7 @@
         <router-link to="/Histoire/Introduction">
             <q-btn color="white" text-color="black" label="Retour au début de l'histoire"></q-btn>
         </router-link>
-            
+        </div>  
         
     </q-page>
     

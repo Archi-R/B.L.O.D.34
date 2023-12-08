@@ -12,7 +12,7 @@
             Il essaie de comprendre alors comment ce serait possible de palier ce problème.
             Il répondit alors à Momo : "Est ce que ce serait possible de faire une loi internationale interdisant cette opération ?".
         </p>
-    
+        <div>
         <router-link to="/Histoire/Acidification">
             <q-btn color="white" text-color="black" label="Lors de ses voyages il constata la présence de carapaces trouées"></q-btn>
         </router-link>
@@ -45,7 +45,7 @@
             <q-btn color="white" text-color="black" label="Retour au début de l'histoire"></q-btn>
         </router-link>
             
-        
+        </div>
     </q-page>
     
     </template>
